@@ -1,12 +1,12 @@
 const txtOp1 = document.getElementById("op1")
 const txtOperation = document.getElementById("operation")
 const txtOp2 = document.getElementById("op2")
-const btnCalcular = document.getElementById("calcular")
+const btnCalculate = document.getElementById("calculate")
 const pResult = document.getElementById("result")
 
-btnCalcular.addEventListener('click', calcular)
+btnCalculate.addEventListener('click', calculate)
 
-function calcular() {
+function calculate() {
     const operation = txtOperation.value
     const op1 = parseFloat(txtOp1.value)
     const op2 = parseFloat(txtOp2.value)
@@ -31,6 +31,6 @@ function calcular() {
         pResult.innerText = "= " + result
     } else {
         pResult.style = "color:red"
-        pResult.innerText = "Calculo imposible"
+        pResult.innerText = "Impossible calculation"
     }
 }
